@@ -10,6 +10,8 @@
 	<string>Spring Framework API Reference</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.springframework</string>
+	<key>DocSetPlatformFamily</key>
+	<string>java</string>
 	<key>DocSetFeedName</key>
 	<string>Flier Lu &lt;flier.lu@gmail.com&gt;</string>
 </dict>

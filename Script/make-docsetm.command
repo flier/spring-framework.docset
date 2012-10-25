@@ -6,6 +6,8 @@ xcode_path=/Applications/Xcode.app/Contents/Developer/
 # specify the output archive file name
 archive_name=../../spring-framework.docset.xar
 
+package_name=../../spring-framework.docset.tar.gz
+
 # specify the docset bundle
 doc_bundle=../
 
@@ -41,3 +43,5 @@ ${xcode_path}/usr/bin/docsetutil index ${doc_bundle}
 # archive the docset for publishing to feed
 echo "archiving the docset ..."
 ${xcode_path}/usr/bin/docsetutil package -output ${archive_name} ${doc_bundle}
+
+tar --exclude='.DS_Store' --exclude='.git' -cvzf ${package_name} ${doc_bundle}
