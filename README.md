@@ -6,4 +6,8 @@ Build
 
 3.  Run the $SPRING-FRAMEWORK-DOCSET/Script/make-docsetm.command script to generate and archive the docset
 
-4.  Click the docset folder to install for Dash, or copy the docset folder to /Library/Developer/Shared/Documentation/DocSets for XCode
+4.  Click the docset folder to install for Dash, or copy the docset folder to ~/Library/Developer/Shared/Documentation/DocSets for XCode
+
+See also: check [the official document](http://kapeli.com/docsets/) for more detail
+
+

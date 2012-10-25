@@ -5,13 +5,13 @@
 	<key>CFBundleVersion</key>
 	<string>3.2</string>
 	<key>DocSetFeedURL</key>
-	<string>http://flier.lu/spring-framework-docset.atom</string>
+	<string>https://raw.github.com/flier/spring-framework.docset/master/spring-framework.xml</string>
 	<key>CFBundleName</key>
 	<string>Spring Framework API Reference</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.springframework</string>
+	<string>spring</string>
 	<key>DocSetPlatformFamily</key>
-	<string>java</string>
+	<string>spring</string>
 	<key>DocSetFeedName</key>
 	<string>Flier Lu &lt;flier.lu@gmail.com&gt;</string>
 </dict>
