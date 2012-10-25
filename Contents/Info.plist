@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleVersion</key>
+	<string>3.2</string>
+	<key>DocSetFeedURL</key>
+	<string>http://flier.lu/spring-framework-docset.atom</string>
+	<key>CFBundleName</key>
+	<string>Spring Framework API Reference</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.springframework</string>
+	<key>DocSetFeedName</key>
+	<string>Flier Lu &lt;flier.lu@gmail.com&gt;</string>
+</dict>
+</plist>
