@@ -4,12 +4,12 @@
 xcode_path=/Applications/Xcode.app/Contents/Developer/
 
 # specify the output archive file name
-archive_name=../../spring-framework.docset.xar
+archive_name=spring-framework.docset.xar
 
-package_name=../../spring-framework.docset.tar.gz
+package_name=spring-framework.docset.tar.gz
 
 # specify the docset bundle
-doc_bundle=../
+doc_bundle=spring-framework.docset
 
 # construct the location to store the documents within the doc bundle
 doc_path=${doc_bundle}/Contents/Resources/Documents
@@ -17,7 +17,7 @@ doc_path=${doc_bundle}/Contents/Resources/Documents
 # change directory to the location of this script
 base_dir=${0%/*}
 echo "change directory to: $base_dir"
-cd $base_dir
+cd $base_dir/../../
 
 # cleanup index-all.html to remove offending text
 index_root=${doc_path}/api/index-files
@@ -32,7 +32,7 @@ for indexFile in `ls $index_root` ; do
 	
 	# generate (from the clean HTML) and install a Tokens.xml file into the docset
 	echo "generating Tokens-$theIndex.xml"
-	xsltproc --html -o ${doc_bundle}/Contents/Resources/Tokens-${theIndex}.xml springdocsetm.xsl clean.html
+	xsltproc --html -o ${doc_bundle}/Contents/Resources/Tokens-${theIndex}.xml ${doc_bundle}/Script/springdocsetm.xsl clean.html
 	rm clean.html
 done
 
